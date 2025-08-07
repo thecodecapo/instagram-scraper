@@ -1,0 +1,41 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Python package files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# VSCode or Cursor settings
+.vscode/
+.cursor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and runtime files
+*.log
+
+# Environment and config
+.env
+config.py
+
+# Data outputs
+*.csv
+*.json
+*.xlsx
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Apify token (if you save it)
+apify_token.txt
