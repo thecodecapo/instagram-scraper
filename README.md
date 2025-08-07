@@ -117,10 +117,3 @@ The `config.py` file contains all configuration settings:
 - `matplotlib`: Basic plotting library
 - `seaborn`: Statistical data visualization
 
-## License
-
-This project is for educational purposes. Please respect Instagram's terms of service and use responsibly.
-
-## Contributing
-
-Feel free to submit issues and enhancement requests!
