@@ -13,6 +13,9 @@ A comprehensive Instagram analytics tool that scrapes Instagram content by **dom
 - 📈 **Engagement Analysis**: Analyze likes and comments by posting time and content type
 - 🔍 **Domain Intelligence**: Automatically categorize content across 10+ predefined domains
 - 🔄 **Smart Fallback System**: Falls back to curated hashtags if trending discovery fails
+- 🎨 **Premium Web UI**: Beautiful, modern web interface with interactive visualizations
+- 📊 **Interactive Charts**: Real-time charts, heatmaps, and domain distribution visualizations
+- 💼 **Export Functionality**: Download results as CSV, JSON, or generate reports
 
 ## Installation
 
@@ -31,6 +34,29 @@ pip install -r requirements.txt
    - Sign up at [Apify](https://apify.com)
    - Get your API token from your account settings
    - Update the `APIFY_TOKEN` in `config.py`
+
+## 🎨 Premium Web UI
+
+### Quick Start (Recommended)
+Launch the beautiful web interface:
+```bash
+python run_ui.py
+```
+This will automatically install dependencies and open the UI at `http://localhost:8501`
+
+### Manual UI Launch
+```bash
+streamlit run app.py
+```
+
+### UI Features
+- **🖼️ Modern Design**: Premium gradient themes and professional styling
+- **📊 Interactive Charts**: Plotly-powered visualizations with hover effects
+- **🔄 Real-time Progress**: Live progress indicators during analysis
+- **📱 Responsive Layout**: Works perfectly on desktop and mobile
+- **🎯 Smart Configuration**: Easy domain/profile selection with helpful guides
+- **💾 Export Options**: Download data in multiple formats
+- **🏷️ Hashtag Chips**: Beautiful hashtag display with frequency counts
 
 ## Usage
 
@@ -97,21 +123,42 @@ python test_modules.py
 ```
 This will run tests to verify all modules work correctly.
 
+## 🖥️ Screenshots & UI Preview
+
+### Main Dashboard
+- **Beautiful gradient header** with professional branding
+- **Real-time metrics cards** showing analysis statistics
+- **Interactive domain/profile selection** with helpful tooltips
+
+### Analysis Results
+- **Trending hashtag charts** with horizontal bar visualizations
+- **Engagement heatmaps** showing optimal posting times
+- **Domain distribution pie charts** for hashtag categorization
+- **Premium hashtag chips** with frequency counts
+
+### Advanced Features
+- **Progress indicators** during data scraping
+- **Export functionality** for CSV and JSON downloads
+- **Responsive design** that works on all devices
+- **Error handling** with user-friendly messages
+
 ## Project Structure
 
 ```
 Instagram-Scraper/
-├── main.py                 # Main entry point
-├── apify_scraper.py        # Instagram scraping using Apify API
-├── data_cleaner.py         # Data normalization and cleaning
-├── analyze_hashtags.py     # Hashtag extraction and analysis
-├── analyze_schedule.py     # Posting schedule analysis
-├── engagement_estimator.py # Engagement metrics analysis
-├── visualizer.py          # Data visualization functions
-├── config.py              # Configuration settings
-├── test_modules.py        # Module testing script
-├── requirements.txt       # Python dependencies
-└── README.md             # This file
+├── app.py                  # 🎨 Premium Streamlit Web UI
+├── run_ui.py              # 🚀 UI Launcher Script  
+├── main.py                # 💻 Command Line Interface
+├── apify_scraper.py       # 📱 Instagram scraping using Apify API
+├── trending_hashtags.py   # 🔥 Dynamic trending hashtag discovery
+├── data_cleaner.py        # 🧹 Data normalization and cleaning
+├── analyze_hashtags.py    # 🏷️  Hashtag extraction and analysis
+├── analyze_schedule.py    # 📅 Posting schedule analysis
+├── engagement_estimator.py # 📊 Engagement metrics analysis
+├── config.py              # ⚙️ Configuration settings
+├── test_modules.py        # 🧪 Module testing script
+├── requirements.txt       # 📦 Python dependencies
+└── README.md             # 📖 Documentation
 ```
 
 ## Output
@@ -182,8 +229,14 @@ The `config.py` file contains all configuration settings:
 
 ## Dependencies
 
+### Core Dependencies
 - `requests`: HTTP library for API calls
 - `pandas`: Data manipulation and analysis
 - `matplotlib`: Basic plotting library
 - `seaborn`: Statistical data visualization
+
+### UI Dependencies
+- `streamlit`: Modern web app framework
+- `plotly`: Interactive visualization library
+- `altair`: Declarative statistical visualization
 
